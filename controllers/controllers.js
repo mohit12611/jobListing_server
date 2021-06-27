@@ -118,7 +118,7 @@ export const register = async (req, res) => {
 }
 
 export const loginUser = async (req, res) => {
-    try {
+    try {    
         let connection = await mongodb.connect(URL, { useUnifiedTopology: true });
         let db = connection.db(DB);
         console.log("Database Connected");
